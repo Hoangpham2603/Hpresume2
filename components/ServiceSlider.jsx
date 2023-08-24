@@ -6,6 +6,7 @@ import {
   RxReader,
   RxRocket,
   RxArrowBottomRight,
+  RxArrowTopRight,
 } from "react-icons/rx";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -52,8 +53,8 @@ const ServiceSlider = () => {
   return (
     <Swiper
       breakpoints={{
-        320: { slidePerView: 1, spaceBetween: 15 },
-        640: { slidePerView: 3, spaceBetween: 15 },
+        320: { slidesPerView: 1, spaceBetween: 15 },
+        640: { slidesPerView: 3, spaceBetween: 15 },
       }}
       freeMode={true}
       pagination={{ clickable: true }}
@@ -68,14 +69,14 @@ const ServiceSlider = () => {
               <div className="text-4xl text-accent/80">{item.icon}</div>
 
               {/* title and desc */}
-              <div>
-                <div>{item.title}</div>
+              <div className="mb-2 text-lg ">
+                <div className="max-w-[350px] leading-normal">{item.title}</div>
                 <p>{item.description}</p>
               </div>
 
               {/* arrow */}
               <div className="text-3xl">
-                <RxArrowBottomRight />
+                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent/80 transition-all duration-300" />
               </div>
             </div>
           </SwiperSlide>
