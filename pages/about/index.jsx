@@ -1,21 +1,9 @@
 import { useState } from "react";
 
 // icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+import { SiAdobephotoshop, SiTypescript, SiTailwindcss } from "react-icons/si";
 
 // components
 import Avatar from "../../components/Avatar";
@@ -39,30 +27,16 @@ const aboutData = [
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          // <FaWordpress />,
+          <SiTypescript />,
+          <SiTailwindcss />,
         ],
       },
       {
         title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiAdobephotoshop />],
       },
     ],
   },
-  // {
-  //   title: "awards",
-  //   info: [
-  //     {
-  //       title: "Webby Awards - Honoree",
-  //       stage: "2011 - 2012",
-  //     },
-  //     {
-  //       title: "Adobe Design Achievement Awards - Finalist",
-  //       stage: "2009 - 2010",
-  //     },
-  //   ],
-  // },
   {
     title: "experience",
     info: [
@@ -72,23 +46,6 @@ const aboutData = [
       },
     ],
   },
-  // {
-  //   title: "credentials",
-  //   info: [
-  //     {
-  //       title: "Web Development - ABC University, LA, CA",
-  //       stage: "2011",
-  //     },
-  //     {
-  //       title: "Computer Science Diploma - AV Technical Institute",
-  //       stage: "2009",
-  //     },
-  //     {
-  //       title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-  //       stage: "2006",
-  //     },
-  //   ],
-  // },
 ];
 
 const About = () => {
@@ -183,7 +140,7 @@ const About = () => {
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[480px] mt-10"
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto mb-5">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto mb-5 items-center">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -201,7 +158,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start mt-5">
+          <div className=" xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 xl:items-center xl:items-start mt-5">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -209,7 +166,9 @@ const About = () => {
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center"
                 >
                   {/* Title */}
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className=" py-3 font-light mb-2 md:mb-0 text-center ">
+                    {item.title}
+                  </div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
 
