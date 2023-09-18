@@ -67,16 +67,8 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Be my first",
+        stage: "2022 - 2023",
       },
     ],
   },
@@ -136,8 +128,9 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             {" "}
-            4 years ago a develop a thing call depression and i still have it to
-            this very day xD
+            Highly motivated, self-starting developer seeking to launch a career
+            building web applications and services. Familiar with development
+            and deployment process for many web-based technologies.
           </motion.p>
 
           {/* counter */}
@@ -152,30 +145,30 @@ const About = () => {
               {/* Experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent/80 mb-2">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  +<CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-center md:text-center">
-                  Years of nothing
+                  Motivation
                 </div>
               </div>
 
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent/80 mb-2">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  + <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-center md:text-center sm:text-center">
-                  Sastisfied womans
+                  Strength
                 </div>
               </div>
 
               {/* Projects */}
               <div className="relative flex-1 after:w-[1px] ">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent/80 mb-2">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  + <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] text-center md:text-center">
-                  Sastisfied womans
+                  Willing to suffer
                 </div>
               </div>
             </div>

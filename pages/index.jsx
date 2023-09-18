@@ -32,10 +32,11 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores,
-            magni commodi doloribus unde blanditiis tempore saepe earum quod
-            totam iusto assumenda nesciunt eos magnam eveniet ducimus ut iure
-            sit natus?
+            I am excited about the opportunity to collaborate on meaningful
+            projects, where I can apply my skills and contribute to the success
+            of innovative web solutions. If you're looking for a front-end
+            developer who is passionate, reliable, and committed to delivering
+            exceptional user experiences, I'd love to connect.
           </motion.p>
 
           {/* btn */}
@@ -72,7 +73,7 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[6%]"
         >
-          <Avatar />
+          {/* <Avatar /> */}
         </motion.div>
       </div>
     </div>

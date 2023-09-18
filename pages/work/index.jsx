@@ -20,7 +20,7 @@ const Work = () => {
               exit="hidden"
               className="h2 xl:ml-12"
             >
-              My Works <span className="text-accent/80">.</span>
+              My Works
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -29,10 +29,7 @@ const Work = () => {
               exit="hidden"
               className=" mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-              quisquam, quia animi, repudiandae sed veniam aspernatur quibusdam
-              aliquam velit consectetur, recusandae enim? Optio consectetur
-              pariatur aperiam corporis maxime, nesciunt fugiat?
+              These are some of the projects I worked on.
             </motion.p>
           </div>
 

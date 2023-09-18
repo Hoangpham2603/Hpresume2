@@ -4,12 +4,12 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "Landing Page",
+          path: "/Work1.png",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Shopee-Clone",
+          path: "/Work2.png",
         },
         {
           title: "title",
