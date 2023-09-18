@@ -46,6 +46,9 @@ const aboutData = [
       },
     ],
   },
+  {
+    title: "My CV",
+  },
 ];
 
 const About = () => {
