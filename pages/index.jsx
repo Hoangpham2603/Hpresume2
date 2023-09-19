@@ -34,9 +34,9 @@ const Home = () => {
           >
             I am excited about the opportunity to collaborate on meaningful
             projects, where I can apply my skills and contribute to the success
-            of innovative web solutions. If you're looking for a front-end
+            of innovative web solutions. If you&#39;re looking for a front-end
             developer who is passionate, reliable, and committed to delivering
-            exceptional user experiences, I'd love to connect.
+            exceptional user experiences, I&#39;d love to connect.
           </motion.p>
 
           {/* btn */}
