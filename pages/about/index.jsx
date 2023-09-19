@@ -25,9 +25,11 @@ const pdfUrl = "./CV.pdf";
 const aboutData = [
   {
     title: "skills",
+    key: "skills",
     info: [
       {
         title: "Web Development",
+        key: "web-development",
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
@@ -39,24 +41,29 @@ const aboutData = [
       },
       {
         title: "UI/UX Design",
+        key: "ui-ux-design",
         icons: [<SiAdobephotoshop />],
       },
     ],
   },
   {
     title: "experience",
+    key: "experience",
     info: [
       {
         title: "Be my first",
+        key: "be-my-first",
         stage: "2022 - 2023",
       },
     ],
   },
   {
     title: "My CV",
+    key: "cv",
     info: [
       {
         title: "Hire me?",
+        key: "hire-me",
         view: "View CV",
         link: pdfUrl,
         download: "Download CV",
@@ -168,7 +175,7 @@ const About = () => {
                     index === itemIndex &&
                     "text-accent/80 after:w-[100%] after:bg-accent after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  key={itemIndex}
+                  key={item.key}
                 >
                   {item.title}
                 </div>
@@ -176,10 +183,10 @@ const About = () => {
             })}
           </div>
           <div className=" xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 xl:items-center xl:items-start mt-5">
-            {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={item.key}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center"
                 >
                   {/* Title */}
@@ -197,9 +204,9 @@ const About = () => {
 
                   <div className="flex gap-x-4">
                     {/* icon */}
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons?.map((icon) => {
                       return (
-                        <div key={itemIndex} className="text-2xl">
+                        <div key={icon.key} className="text-2xl">
                           {icon}
                         </div>
                       );
