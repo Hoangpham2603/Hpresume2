@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import Image from "next/image";
 // icons
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
 
@@ -9,12 +9,18 @@ import { SiAdobephotoshop, SiTypescript, SiTailwindcss } from "react-icons/si";
 import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
+// import CV from "../../public/CV.pdf";
+
 // framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
+//CV
 //counter
 import CountUp from "react-countup";
+import PDFViewer from "../../components/PDFViewer";
+
+const pdfUrl = "./CV.pdf";
 //  data
 const aboutData = [
   {
@@ -48,6 +54,14 @@ const aboutData = [
   },
   {
     title: "My CV",
+    info: [
+      {
+        title: "Hire me?",
+        view: "View CV",
+        link: pdfUrl,
+        download: "Download CV",
+      },
+    ],
   },
 ];
 
@@ -174,6 +188,12 @@ const About = () => {
                   </div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
+                  {/* <iframe src="../../public/CV.pdf" /> */}
+                  {item.title === "Hire me?" && (
+                    <PDFViewer pdfUrl={item.link} />
+                  )}
+
+                  {/* <div>{item.download}</div> */}
 
                   <div className="flex gap-x-4">
                     {/* icon */}
