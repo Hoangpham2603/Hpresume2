@@ -1,12 +1,17 @@
 import React from "react";
-import { Document, Page } from "react-pdf";
 
 export default function PDFViewer({ pdfUrl }) {
   return (
-    <div>
-      <Document file={pdfUrl}>
-        <Page pageNumber={1} />
-      </Document>
-    </div>
+    <object
+      data={pdfUrl}
+      type="application/pdf"
+      width="100%"
+      height="500px" // Set an appropriate height
+    >
+      <p>
+        It appears you don't have a PDF plugin for this browser. You can{" "}
+        <a href={pdfUrl}>click here to download the PDF file.</a>
+      </p>
+    </object>
   );
 }

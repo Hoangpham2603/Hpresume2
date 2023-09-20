@@ -5,7 +5,6 @@ import {
   RxDesktop,
   RxReader,
   RxRocket,
-  RxArrowBottomRight,
   RxArrowTopRight,
 } from "react-icons/rx";
 
@@ -14,8 +13,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-import { motion } from "framer-motion";
-import { FadeIn } from "../variants";
+// import { motion } from "framer-motion";
+// import { FadeIn } from "../variants";
 
 // required modules:
 import { FreeMode, Pagination } from "swiper";

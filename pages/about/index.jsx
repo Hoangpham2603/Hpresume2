@@ -74,6 +74,7 @@ const aboutData = [
 
 const About = () => {
   const [index, setIndex] = useState(0);
+  const [viewCV, setViewCV] = useState(false);
   return (
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
@@ -195,12 +196,17 @@ const About = () => {
                   </div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
-                  {/* <iframe src="../../public/CV.pdf" /> */}
-                  {item.title === "Hire me?" && (
-                    <PDFViewer pdfUrl={item.link} />
-                  )}
 
-                  {/* <div>{item.download}</div> */}
+                  {item.title === "Hire me?" && (
+                    <a
+                      onClick={() => {
+                        window.open(item.link, "_blank");
+                      }}
+                      className="bg-accent text-white py-2 px-4 rounded-lg hover:bg-accent-dark transition duration-300"
+                    >
+                      View CV
+                    </a>
+                  )}
 
                   <div className="flex gap-x-4">
                     {/* icon */}
