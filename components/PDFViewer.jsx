@@ -9,7 +9,7 @@ export default function PDFViewer({ pdfUrl }) {
       height="500px" // Set an appropriate height
     >
       <p>
-        It appears you don't have a PDF plugin for this browser. You can{" "}
+        It appears you don&#39;t have a PDF plugin for this browser. You can{" "}
         <a href={pdfUrl}>click here to download the PDF file.</a>
       </p>
     </object>

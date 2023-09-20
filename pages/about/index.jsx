@@ -202,7 +202,7 @@ const About = () => {
                       onClick={() => {
                         window.open(item.link, "_blank");
                       }}
-                      className="bg-accent text-white py-2 px-4 rounded-lg hover:bg-accent-dark transition duration-300"
+                      className="bg-accent cursor-pointer text-white py-2 px-4 rounded-lg hover:bg-accent-dark transition duration-300"
                     >
                       View CV
                     </a>
