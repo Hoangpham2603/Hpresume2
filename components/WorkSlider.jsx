@@ -15,13 +15,13 @@ const workSlides = {
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          path: "/3d-card.png",
+          link: "https://master--3d-shoes-card.netlify.app/",
         },
         {
           title: "title",
           path: "/thumb4.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          link: "https://hp-shoppee-clone.netlify.app/",
         },
       ],
     },
@@ -30,22 +30,22 @@ const workSlides = {
         {
           title: "title",
           path: "/thumb4.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          link: "https://hp-shoppee-clone.netlify.app/",
         },
         {
           title: "title",
           path: "/thumb1.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          link: "https://hp-shoppee-clone.netlify.app/",
         },
         {
           title: "title",
           path: "/thumb2.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          link: "https://hp-shoppee-clone.netlify.app/",
         },
         {
           title: "title",
           path: "/thumb3.jpg",
-          link: "https://hoangpham2603.github.io/Natours-landingpage/",
+          link: "https://hp-shoppee-clone.netlify.app/",
         },
       ],
     },
