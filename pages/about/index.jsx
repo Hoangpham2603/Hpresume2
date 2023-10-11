@@ -123,7 +123,7 @@ const About = () => {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0"
           >
-            <div className="flex flex-1 xl:gap-x-6 justify-center items-center">
+            <div className="flex flex-1 xl:gap-x-6 justify-center items-center md:justify-center md:items-center">
               {/* Experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent/80 mb-2">
@@ -183,7 +183,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 xl:items-center xl:items-start mt-5">
+          <div className=" xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 xl:items-center md:items-center sm:items-center xs:items-center mt-5">
             {aboutData[index].info.map((item) => {
               return (
                 <div
