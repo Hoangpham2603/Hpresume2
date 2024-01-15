@@ -189,7 +189,7 @@ const About = () => {
               return (
                 <div
                   key={item.key}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center"
+                  className="flex-1 flex flex-col xsm:flex-row md:flex-row max-w-max gap-x-2 items-center text-center"
                 >
                   {/* Title */}
                   <div className=" py-3 font-light mb-2 md:mb-0 text-center ">
@@ -203,13 +203,13 @@ const About = () => {
                       onClick={() => {
                         window.open(item.link, "_blank");
                       }}
-                      className="bg-accent cursor-pointer text-white py-2 px-4 rounded-lg hover:bg-accent-dark transition duration-300"
+                      className="bg-accent cursor-pointer text-white py-2 px-4 rounded-lg hover:bg-accent-dark transition duration-300 "
                     >
                       View CV
                     </a>
                   )}
 
-                  <div className="flex gap-x-4">
+                  <div className="flex gap-x-4 items-center">
                     {/* icon */}
                     {item.icons?.map((icon) => {
                       return (
