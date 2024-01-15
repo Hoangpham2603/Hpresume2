@@ -1,5 +1,3 @@
-import Circles from "../../components/Circles";
-
 // icons:
 import { BsArrowRight } from "react-icons/bs";
 
@@ -40,7 +38,7 @@ const Contact = () => {
           from_name: form.name,
           to_name: "Hoang",
           from_email: form.email,
-          to_email: "kunpham2603@gmail.com",
+          to_email: "pvh.hoang.0326@gmail.com",
           message: form.message,
         },
         "gwv04vgjkrfNu2HOH"

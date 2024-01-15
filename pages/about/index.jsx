@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 // icons
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs } from "react-icons/fa";
 
 import { SiAdobephotoshop, SiTypescript, SiTailwindcss } from "react-icons/si";
 
@@ -18,7 +18,6 @@ import { fadeIn } from "../../variants";
 //CV
 //counter
 import CountUp from "react-countup";
-import PDFViewer from "../../components/PDFViewer";
 
 const pdfUrl = "./CV.pdf";
 //  data
@@ -37,6 +36,7 @@ const aboutData = [
           <FaReact key="react" />,
           <SiTypescript key="typescript" />,
           <SiTailwindcss key="tailwindcss" />,
+          <FaNodeJs key="NodeJs" />,
         ],
       },
       {
@@ -109,10 +109,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            {" "}
-            Highly motivated, self-starting developer seeking to launch a career
-            building web applications and services. Familiar with development
-            and deployment process for many web-based technologies.
+            I’m a self-start web developer currently looking for an opportunity
+            to kick-start my career building web applications and services.
+            Where I can apply my skills and contribute to the success of
+            innovative web solutions. If you’re looking for a front-end
+            developer who is passionate, and reliable, I’d love to connect
           </motion.p>
 
           {/* counter */}
