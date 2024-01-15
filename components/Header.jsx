@@ -18,7 +18,7 @@ const Header = () => {
               alt=""
               priority={true}
             /> */}
-            <div className="text-[2rem]">
+            <div className="text-[2rem] xsm:text-[1rem]">
               Hoang Pham <span className="text-accent/80">.</span>
             </div>
           </Link>
