@@ -76,7 +76,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   const [viewCV, setViewCV] = useState(false);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="	min-height: fit-content bg-primary/30 py-32 text-center xl:text-left about--container">
       <Circles />
 
       {/* avatar img */}
@@ -87,7 +87,7 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        {/* <Avatar /> */}
       </motion.div>
       <div className="container mx-auto h-full w-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
@@ -122,7 +122,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 	"
           >
             <div className="flex flex-1 xl:gap-x-6 justify-center items-center md:justify-center md:items-center">
               {/* Experience */}

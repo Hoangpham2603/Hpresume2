@@ -19,7 +19,7 @@ const Header = () => {
               priority={true}
             /> */}
             <div className="text-[2rem] xsm:text-[1.5rem] w-full">
-              Hoang Pham
+              Hoang Pham <span className=" text-red-600 font-semibold">.</span>
             </div>
           </Link>
 
